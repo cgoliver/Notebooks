@@ -12,7 +12,6 @@ def lazy_read(path, lines, encoding="utf-8"):
         yield file_handle.readline()
         line_count += 1
 
-questions = data_load_list("Questions.csv", encoding="latin-1")
+# questions = data_load_list("Questions.csv", encoding="latin-1")
 
 g = lazy_read("Questions.csv", 10, encoding="latin-1")
-
